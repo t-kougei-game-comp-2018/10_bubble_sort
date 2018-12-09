@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int main(int argc, int argv[]) 
+int main(void) 
 {
    
-    int i, j, temp;
+    int i, j, temp,argc=100,argc[100];
 
   for (i = 0; i < argc; i++) {
     for (j = argc; j > i; j--) {
