@@ -2,8 +2,8 @@
 #include<stdlib.h>  
 int main(int argc, char *argv[])
 {
-	char str[2000];
-	int data[100], i,j,tmp,h,count=0;
+	char str[3000];
+	int data[200], i,j,tmp,h,count=0;
 	while (fgets(str, sizeof(str), stdin)) {
 		int n = atoi(str);
 		data[count] = n;
