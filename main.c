@@ -9,8 +9,11 @@ int main(int argc, char *argv[])
 		data[count] = n;
 		count++;
 		if (count==9&&n==1|| count == 3 && n == 1) {
-			for(i=0;i<count;i++)
-				printf("%d ", data[i]);
+			for(i=0;i<count;i++){
+				printf("%d", data[i]);
+				if(i<count-1)
+					printf(" ");
+			}
 			printf("\n");
 			for (j = 0; j < count- 1; j++) {
 				for (i = count - 2; i >= 0; i--) {
@@ -22,7 +25,9 @@ int main(int argc, char *argv[])
 						data[i + 1] = tmp;
 						for (h = 0; h < count; h++)
 						{
-							printf("%d ", data[h]);
+							printf("%d", data[h]);
+							if(i<count-1)
+								printf(" ");
 						}
 						printf("\n");
 					}
@@ -31,8 +36,11 @@ int main(int argc, char *argv[])
 		}
 
 		if (count==100) {
-			for (i = 0; i<count; i++)
-				printf("%d ", data[i]);
+			for(i=0;i<count;i++){
+				printf("%d", data[i]);
+				if(i<count-1)
+					printf(" ");
+			}
 			printf("\n");
 			for (j = 0; j < count-1; j++) {
 				for (i = count- 2; i >= 0; i--) {
@@ -44,7 +52,9 @@ int main(int argc, char *argv[])
 						data[i + 1] = tmp;
 						for (h = 0; h < count; h++)
 						{
-							printf("%d ", data[h]);
+							printf("%d", data[h]);
+							if(i<count-1)
+								printf(" ");
 						}
 						printf("\n");
 					}
