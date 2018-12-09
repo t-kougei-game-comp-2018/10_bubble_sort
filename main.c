@@ -3,8 +3,10 @@
 int main(void) 
 {
    
-    int i, j, temp,argc=100,argc[100];
-
+    int i, j,number, temp,argc=100,argc[100];
+   for (i = 0; i < argc; i++) {
+        scanf_s("%d",&number);
+   }
   for (i = 0; i < argc; i++) {
     for (j = argc; j > i; j--) {
       if (argv[j-1] > argv[j]) {
