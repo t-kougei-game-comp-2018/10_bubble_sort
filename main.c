@@ -2,7 +2,7 @@
 
 int main(int argc, int argv[]) 
 {
-    int str[7];   
+   
     int i, j, temp;
 
   for (i = 0; i < argc; i++) {
@@ -14,6 +14,7 @@ int main(int argc, int argv[])
       
     }
   }
+      printf("%d\n",argv[i]);
 }
     return 0;
 }
