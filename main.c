@@ -9,7 +9,9 @@ int main(int argc, char *argv[])
   for (i = 0; i <= 100; i++) {
    
       if (str[i] > str[i+1]) {
-       str[i]=str[i+1]
+       str[i]=str[i+1];
+          printf("\n");
+      }
 }
     return 0;
 }
