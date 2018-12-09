@@ -1,12 +1,22 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) 
+int main(void) 
 {
-    char str[7];
-    
-    while(fgets(str, sizeof(str), stdin)){
-        printf("%s", str);
+   
+    int i, j,number, temp,argc=100,argc[100];
+   for (i = 0; i < argc; i++) {
+        scanf_s("%d",&number);
+   }
+  for (i = 0; i < argc; i++) {
+    for (j = argc; j > i; j--) {
+      if (argv[j-1] > argv[j]) {
+        temp = argv[j-1];
+        argv[j-1] = argv[j];
+        argv[j] = temp;
+      
     }
-
+  }
+      printf("%d\n",argv[i]);
+}
     return 0;
 }
