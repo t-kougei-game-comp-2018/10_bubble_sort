@@ -33,6 +33,7 @@ int main(int argc, char *argv[])
 		if (count==100) {
 			for (i = 0; i<count; i++)
 				printf("%d ", data[i]);
+			printf("\n");
 			for (j = 0; j < count-1; j++) {
 				for (i = count- 2; i >= 0; i--) {
 
