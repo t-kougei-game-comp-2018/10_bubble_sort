@@ -2,7 +2,7 @@
 #include<stdlib.h>  
 int main(int argc, char *argv[])
 {
-	char str[100];
+	char str[10000];
 	int data[100], i,j,tmp,h,count=0;
 	while (fgets(str, sizeof(str), stdin)) {
 		int n = atoi(str);
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 			}
 		}
 
-		if (count==100) {
+		if (count==100&&n==20) {
 			for(i=0;i<count;i++){
 				printf("%d", data[i]);
 				if(i<count-1)
