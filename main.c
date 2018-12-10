@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 						for (h = 0; h < count; h++)
 						{
 							printf("%d", data[h]);
-							if(i<count-1)
+							if(h<count-1)
 								printf(" ");
 						}
 						printf("\n");
@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 						for (h = 0; h < count; h++)
 						{
 							printf("%d", data[h]);
-							if(i<count-1)
+							if(h<count-1)
 								printf(" ");
 						}
 						printf("\n");
