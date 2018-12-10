@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 			}
 			printf("\n");
 			for(j=0;j<n-1;j++){
-				for (i=n-2;i>=0;i--) {
+				for (i=j+1;i<n-2;i++) {
 					if (data[i]>data[i+1]){
 						tmp=data[i];
 						data[i]=data[i+1];
