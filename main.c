@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 		x=atoi(str);
 		data[n]=x;
 		n++;
-		if(n==9&&x==1||n==3&&x==1||n==100&&x==20){
+		if(n==9&&x==1||n==3&&x==1){
 			for(i=0;i<n;i++){
 				printf("%d",data[i]);
 				if(i<n-1)
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 				}
           		}
 		}
-		/*if(n==100&&x==20) {
+		if(n==100&&x==20) {
 			for(i=0;i<n;i++){
 				printf("%d", data[i]);
 				if(i<n-1)
@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 
 			}
 
-		}*/
+		}
 	}
 	return 0;
 }
